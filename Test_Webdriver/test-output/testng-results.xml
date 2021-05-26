@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-25T17:59:57 IST" name="Suite" finished-at="2021-05-25T18:01:04 IST" duration-ms="67624">
+    <groups>
+    </groups>
+    <test started-at="2021-05-25T17:59:57 IST" name="Test" finished-at="2021-05-25T18:01:04 IST" duration-ms="67624">
+      <class name="selenium.Corporate">
+        <test-method is-config="true" signature="Start()[pri:0, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T17:59:57 IST" name="Start" finished-at="2021-05-25T18:00:33 IST" duration-ms="36685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Start -->
+        <test-method signature="Header_Products()[pri:0, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:00:33 IST" name="Header_Products" finished-at="2021-05-25T18:00:34 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Header_Products -->
+        <test-method signature="Search_Validation()[pri:1, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:00:34 IST" name="Search_Validation" finished-at="2021-05-25T18:00:51 IST" duration-ms="16734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_Validation -->
+        <test-method signature="News_Validation()[pri:2, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:00:51 IST" name="News_Validation" finished-at="2021-05-25T18:00:52 IST" duration-ms="1392" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (322, 1278)
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-6QG2MTI', ip: '192.168.225.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\$ure$h\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:5965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dd36e7767e972f730b48fb008bc7240]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (322, 1278)
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-6QG2MTI', ip: '192.168.225.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\$ure$h\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:5965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dd36e7767e972f730b48fb008bc7240
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at selenium.Corporate.News_Validation(Corporate.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- News_Validation -->
+        <test-method signature="PrivacyText_Validation()[pri:4, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:00:52 IST" name="PrivacyText_Validation" finished-at="2021-05-25T18:00:56 IST" duration-ms="4198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrivacyText_Validation -->
+        <test-method signature="Locations_Validation()[pri:5, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:00:56 IST" name="Locations_Validation" finished-at="2021-05-25T18:01:01 IST" duration-ms="4869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Locations_Validation -->
+        <test-method signature="FooterChiclets_Validation()[pri:6, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:01:01 IST" name="FooterChiclets_Validation" finished-at="2021-05-25T18:01:04 IST" duration-ms="2813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FooterChiclets_Validation -->
+        <test-method signature="Navigation_Logo_Validation()[pri:7, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:01:04 IST" name="Navigation_Logo_Validation" finished-at="2021-05-25T18:01:04 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigation_Logo_Validation -->
+        <test-method signature="Location_Language()[pri:8, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:01:04 IST" name="Location_Language" finished-at="2021-05-25T18:01:04 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Location_Language -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:selenium.Corporate@5c6648b0]" started-at="2021-05-25T18:01:04 IST" name="Close" finished-at="2021-05-25T18:01:04 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- selenium.Corporate -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
