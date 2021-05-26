@@ -61,7 +61,7 @@ public WebDriver driver;
 			System.out.println("Fail");
 		}
 	}
-	@Test(priority=2)
+	@Test(enabled=false)
 		public void News_Validation() throws ParseException{
 			driver.findElement(By.partialLinkText("Newsroom")).click();
 			if(driver.getPageSource().contains("No news found for this month")){
